@@ -463,7 +463,7 @@ h2{
 }
 .card-button:hover{
     text-decoration: underline;
-    color: rgb(8, 0, 255);
+    color: red;
 }
 
 .card-article:hover .card-data{
