@@ -23,6 +23,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+/* Navigation Bar */
 a{
     text-decoration: none;
 }
@@ -34,7 +35,6 @@ a{
     background-color: rgb(255, 255, 255);
     border-bottom: 2px solid black;
  }
- 
  .navbar .logo{
     max-width: var(--max-width);
     margin: auto;
@@ -43,31 +43,26 @@ a{
     align-items: center;
     justify-content: space-between;
 }
-
  nav .logo a{
     font-size: 1.5rem; 
     font-weight: 600;
     color: rgb(0, 0, 0);
     transition: 0.3s;
  }
-
  nav .logo a:hover{
     color: red;
  }
-
  nav .checkbox{
     display: none;
  }
  nav input{
     display: none;
  }
-
  nav .checkbox i{
     font-size: 2rem;
     color: black;
     cursor: pointer;
  }
-
  ul{
     display: flex;
     align-items: center;
@@ -80,12 +75,10 @@ a{
     border-radius: 20px;
     transition: 0.5s;
  }
-
  ul li .button:hover{
     background-color: red;
     color: white;
  }
-
  ul li a{
     padding: 0.5rem 1rem;
     border: 2px solid transparent;
@@ -94,8 +87,6 @@ a{
     color: red;
     transition: 0.2s;
  }
-
-
 ul li a:hover{
     border-bottom-color: black;
     color: rgb(0, 0, 0);
@@ -107,7 +98,6 @@ ul li a:hover{
     background-color: black;
     margin-inline: 1.5rem;
 }
-
 .section-container{
     min-height: 100vh;
     max-width: var(--max-width);
@@ -117,13 +107,11 @@ ul li a:hover{
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
 }
-
 .content{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-
 .subtitle{
     font-size: 1.5rem;
     letter-spacing: 3px;
@@ -131,7 +119,6 @@ ul li a:hover{
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
-
 .title{
     font-size: 2rem; 
     font-weight: 400;
@@ -139,14 +126,12 @@ ul li a:hover{
     color: rgb(0, 221, 255);
     margin-bottom: 1rem;
 }
-
 .title span{
     font-size: 2.5rem;
     /* text-decoration: underline; */
     color: red;
     font-weight: 600;
 }
-
 .description{
     font-size: 1.3rem;
     line-height: 1.8rem;
@@ -161,7 +146,6 @@ ul li a:hover{
     transform: translateY(-10px);
 
 }
-
 .btn{
     display: flex;
     gap: 1rem;
@@ -178,17 +162,14 @@ ul li a:hover{
     transition: 0.5s;
     cursor: pointer;
 }
-
 .hire-me{
     background-color: transparent;
     color: white;
 }
-
 .hire-me:hover{
     background-color: aqua;
     color: black;
 }
-
 .icons {
     font-size: 1.5rem;
     font-weight: 100;
@@ -205,17 +186,14 @@ ul li a:hover{
     color: white;
     transition: .4s;
 }
-
 .icons i:hover{
     color: red;
     transform: translateY(-10px);
 }
-
 .image{
     display: grid;
     place-items: center;
 }
-
 .image img{
     height: 40rem;
     width: 40rem;
@@ -262,7 +240,6 @@ h2{
     flex-direction: column;
     justify-content: center;
 }
-
 .name{
     font-size: 4rem; 
     font-weight: 600;
@@ -317,7 +294,6 @@ h2{
     transition: .3s;
     margin-left: 1rem;
 }
-
 .icons1 i:hover{
     color: red;
 }
@@ -386,7 +362,6 @@ h2{
 .card-container{
     color: black;
 }
-
 .card-article img{
     display: block;
     max-width: 100%;
@@ -394,7 +369,6 @@ h2{
     border: 3px solid black;
     border-radius: 3rem;
 }
-
 .main-card-container{
    background-color: #727272;
    display: grid;
@@ -402,12 +376,10 @@ h2{
    margin-inline: 1.5rem;
    padding-block: 5rem;
 }
-
 .card-container{
     display: grid;
     row-gap: 3.5rem;
 }
-
 .card-article{
     /* position: relative; */
     overflow: hidden;
@@ -424,7 +396,6 @@ h2{
     width: 300px;
     border-radius: 2rem;
 }
-
 .card-data{
     width: 250px;
     background-color: rgb(0, 255, 234);
@@ -441,13 +412,11 @@ h2{
     transition: opacity 1s 1s;
     text-align: center;
 }
-
 .card-description{
     display: block;
     font-size: 12px;
     margin-bottom: 0.25rem;
 }
-
 .card-title{
     font-size: 1.5rem;
     font-weight: 600;
@@ -465,7 +434,6 @@ h2{
     text-decoration: underline;
     color: red;
 }
-
 .card-article:hover .card-data{
     animation: show-data 1.5s forwards;
     opacity: 1;
@@ -489,14 +457,11 @@ h2{
         transform: translateY(-2rem);
     }
 }
-
 @keyframes remove-overflow{
     to{
         overflow: initial;
     }
 }
-
-
 @keyframes  remove-data{
     0%{
         transform: translateY(-5rem);
@@ -517,6 +482,7 @@ h2{
         overflow: hidden;
     }
 }
+
 
 /* project page */
 @media screen and (min-width: 340px){
@@ -643,7 +609,6 @@ h2{
     outline: none;
     resize: none;
 }
-
 .contact-form .inputbox span{
     position: absolute;
     left: 57%;
@@ -758,6 +723,7 @@ footer{
     color: aqua;
     background-color: black;
 }
+
 /* login page */
 .login-form{
     display: flex;
@@ -792,7 +758,6 @@ footer{
 .input-box .p-f{
     display: flex;
 }
-
 .input-box a{
     display: flex;
     width: 100%;
