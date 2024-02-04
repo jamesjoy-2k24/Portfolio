@@ -45,7 +45,7 @@
                         
                     </p>
                     <div class="btn">
-                        <button class="hire-me">Hire Me</button>
+                        <button id="hire-me">Hire Me</button>
                     </div>
                     <div class="icons">
                         <a href="#"><i class="ri-facebook-fill"></i></a>
@@ -92,50 +92,12 @@
     </div>
 </section>
 
-<!-- Create Projects page -->
-    <div id="projects" class="main-card-container">
-        <h2>Projects</h2>
-        <div class="card-container">
-            <article class="card-article">
-                <img src="assets/projects4.jpg" alt="projects" class="cimg2">
-                <div class="card-data">
-                   <span class="card-description">S, T, E and M</span>
-                   <h3 class="card-title">Cyber Security</h3>
-                   <a href="" class="card-button">Read More</a>
-                </div>
-           </article>
-
-           <article class="card-article">
-            <img src="assets/project1.jpeg" alt="projects" class="cimg1">
-            <div class="card-data">
-               <span class="card-description">The Key To Digital security</span>
-               <h3 class="card-title">Cryptography</h3>
-               <a href="" class="card-button">Read More</a>
-            </div>
-       </article>
-
-           <article class="card-article">
-                <img src="assets/projects3.jpg" alt="projects" class="cimg3">
-                <div class="card-data">
-                    <span class="card-description">Information security artifacts in the SDL</span>
-                    <h3 class="card-title">Information security</h3>
-                    <a href="" class="card-button">Read More</a>
-                </div>
-           </article>
-        </div>
-        <div class="icons1">
-            <a href=""><i class="ri-facebook-fill"></i></a>
-            <a href=""><i class="ri-twitter-line"></i></a>
-            <a href="https://github.com/jamesjoy-2k24"><i class="ri-github-fill"></i></a>
-            <a href="https://www.linkedin.com/feed/"><i class="ri-linkedin-line"></i></a>
-        </div>
-    </div>
-     
+<!--Create Project page-->
 <!-- Create contact page -->
 <section id="contacts" class="contact">
     <div class="content">
         <h4>Contact Me</h4>
-        <p class="contact-des">Anywhere, Anytime contact me to your all of the doubt about cyber security.</p>
+        <p class="contact-des">Anywhere, Anytime contact me to your work. Let's to work together !</p>
     </div>
     <div class="detail">
         <div class="contact-info"> 
@@ -167,15 +129,15 @@
             <form>
                 <h1>Send Message</h1>
                 <div class="inputbox">
-                    <input type="text" name="name" required="required" placeholder="#">
+                    <input type="text" name="name" required="required">
                     <span>Full Name</span>
                 </div>
                 <div class="inputbox">
-                    <input type="text" name="email" required="required" placeholder="#">
+                    <input type="text" name="email" required="required">
                     <span>Email</span>
                 </div>
                 <div class="inputbox">
-                    <textarea required="required" placeholder="#"></textarea>
+                    <textarea required="required"></textarea>
                     <span>Type Your Message Here!</span>
                 </div>
                 <div class="inputbox">
@@ -183,36 +145,6 @@
                 </div>
             </form>
         </div>
-    </div>
-</section>
-
-<!-- create login page -->
-<section id="login" class="login-form">
-    <div class="Form1">
-        <form action="">
-            <div class="input-box">
-                <label>Username/Email</label><br>
-                <input type="text" id="username/Email" name="username/email" placeholder="Type yor name and email">
-            </div><br>
-
-            <div class="input-box">
-                <div class="p-f">
-                    <label>Password</label>
-                    <a href="https://www.youtube.com">Forget?</a><br>
-                </div>
-                <input type="password" id="password" name="password" placeholder="Type your assword">
-            </div><br>
-
-            <div class="remember">
-                <input type="checkbox" checked="true" placeholder="#"><lable>Remember me?</lable>
-            </div><br>
-
-                <input type="submit" id="submit" value="Log in" class="btn"><br><br>
-
-            <div class="Sign-up">
-                 <p>Not a member? <a href="#">Sign up</a></p>
-            </div>
-        </form>
     </div>
 </section>
 
@@ -235,8 +167,17 @@
         </footer>
     </div>
 </div>
+
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#hire-me").click(function(){
+            window.location.href = "mailto:jamesjoy2k24@gmail.com?subject=Hire Me";
+        });
+    });
+</script>
 </body>
 </html>
 
